@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Jespanak Skin author dashboard for purchases and inventory.">
+	<title>Jespanak | Author dashboard</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styleAuth.css">
+</head>
+<body>
+	<div class="app-shell">
+		<aside class="sidebar">
+			<a class="brand" href="../Customer/index.html" aria-label="Jespanak storefront">jespanak<span>.</span></a>
+			<div class="author-badge"><span class="status-dot"></span> Author workspace</div>
+			<nav class="side-nav" aria-label="Dashboard navigation">
+				<a class="side-link active" href="#overview"><span class="nav-icon">◒</span> Overview</a>
+				<a class="side-link" href="#orders"><span class="nav-icon">▤</span> Purchases <span class="nav-count">12</span></a>
+				<a class="side-link" href="#inventory"><span class="nav-icon">□</span> Inventory</a>
+				<a class="side-link" href="#insights"><span class="nav-icon">↗</span> Insights</a>
+			</nav>
+			<div class="sidebar-footer">
+				<a href="../Customer/index.html">View storefront <span>↗</span></a>
+				<p>Jespanak Skin<br><span>Author access</span></p>
+			</div>
+		</aside>
+
+		<main class="dashboard">
+			<header class="topbar">
+				<div class="mobile-brand"><a class="brand" href="../Customer/index.html">jespanak<span>.</span></a></div>
+				<div class="topbar-actions"><span class="last-synced">Last synced just now</span><button class="icon-button" type="button" aria-label="View notifications">♢<span class="notification-dot"></span></button><button class="profile-button" type="button" aria-label="Open account menu">JS</button></div>
+			</header>
+
+			<div class="content-wrap">
+				<section class="page-intro" id="overview">
+					<div><p class="eyebrow">Good morning, Jespanak</p><h1>Your skin is <em>moving.</em></h1><p class="intro-copy">A clear view of today's orders and the products your customers are reaching for.</p></div>
+					<button class="export-button" id="export-button" type="button"><span>↓</span> Export report</button>
+				</section>
+
+				<section class="stat-grid" aria-label="Store performance">
+					<article class="stat-card stat-primary"><div class="stat-label"><span>Net sales</span><span class="trend up">↑ 18.4%</span></div><strong id="net-sales">$4,286</strong><small>vs. $3,621 last month</small><div class="mini-chart" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+					<article class="stat-card"><div class="stat-label"><span>Orders</span><span class="trend up">↑ 12.1%</span></div><strong id="order-count">128</strong><small>17 orders this week</small><div class="stat-mark peach">+</div></article>
+					<article class="stat-card"><div class="stat-label"><span>Average order</span><span class="trend up">↑ 4.6%</span></div><strong>$33.48</strong><small>Across all purchases</small><div class="stat-mark lilac">↗</div></article>
+					<article class="stat-card"><div class="stat-label"><span>Low stock items</span><span class="trend warning">Needs attention</span></div><strong id="low-stock-count">2</strong><small>Restock before they sell out</small><div class="stat-mark butter">!</div></article>
+				</section>
+
+				<div class="dashboard-grid">
+					<section class="panel orders-panel" id="orders">
+						<div class="panel-heading"><div><p class="eyebrow">Latest activity</p><h2>Recent purchases</h2></div><a class="text-link" href="#orders">View all <span>↗</span></a></div>
+						<div class="table-scroll"><table><thead><tr><th>Order</th><th>Customer</th><th>Items</th><th>Total</th><th>Status</th></tr></thead><tbody id="orders-body"></tbody></table></div>
+					</section>
+					<section class="panel spotlight-panel" id="insights"><div class="panel-heading"><div><p class="eyebrow">Customer favorite</p><h2>Night Shift</h2></div><span class="pill">Top product</span></div><div class="spotlight-content"><div class="product-orb lilac-orb"><span>NS</span></div><div><strong>42 sold</strong><p>Bakuchiol + rosehip</p><div class="progress-track"><span style="width: 78%"></span></div><small>78% of monthly goal</small></div></div><div class="spotlight-footer"><span>Best performing day</span><strong>Thursday</strong></div></section>
+				</div>
+
+				<section class="panel inventory-panel" id="inventory">
+					<div class="panel-heading inventory-heading"><div><p class="eyebrow">Your catalog</p><h2>Items available</h2></div><div class="inventory-actions"><label class="search-field"><span>⌕</span><input id="inventory-search" type="search" placeholder="Search items" aria-label="Search inventory"></label><select id="stock-filter" aria-label="Filter inventory"><option value="all">All stock</option><option value="healthy">In stock</option><option value="low">Low stock</option><option value="out">Out of stock</option></select></div></div>
+					<div class="table-scroll"><table class="inventory-table"><thead><tr><th>Item</th><th>Category</th><th>Price</th><th>Units available</th><th>Sales</th><th></th></tr></thead><tbody id="inventory-body"></tbody></table></div>
+				</section>
+			</div>
+		</main>
+	</div>
+	<div class="toast" role="status" aria-live="polite"></div>
+	<script src="functionAuth.js"></script>
+</body>
+</html>

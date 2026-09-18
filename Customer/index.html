@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Jespanak makes simple, sensorial skincare for skin that feels like itself.">
+	<title>Jespanak Skin | Skin, made luminous</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="announcement">Free shipping on orders over $75 <span>✦</span> Your skin, in its best light</div>
+	<header class="site-header">
+		<a class="brand" href="#top" aria-label="Jespanak home">jespanak<span>.</span></a>
+		<nav class="main-nav" aria-label="Main navigation"><a href="#shop">Shop</a><a href="#ritual">The ritual</a><a href="#journal">Journal</a></nav>
+		<div class="header-actions"><button class="icon-button search-toggle" aria-label="Search">⌕</button><button class="account-button" type="button" aria-label="Open account">Account</button><button class="profile-button" type="button" aria-label="Open your profile" hidden></button><button class="bag-button" aria-label="Shopping bag">Bag <span class="bag-count">0</span></button><button class="menu-toggle" aria-label="Open menu"><span></span><span></span></button></div>
+	</header>
+	<main id="top">
+		<section class="hero"><div class="hero-copy"><p class="eyebrow">Skincare, simplified</p><h1>Skin that<br><em>feels like you.</em></h1><p class="hero-text">Thoughtful essentials made with effective ingredients, quiet rituals, and your real skin in mind.</p><a class="button button-dark" href="#shop">Explore the edit <span>↗</span></a></div><div class="hero-image"><img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=1200&q=85" alt="Jespanak skincare products on a soft pink surface"><div class="hero-note"><span>01</span><strong>Good skin<br>starts gently.</strong></div></div><div class="hero-stamp">FORMULATED<br>FOR REAL LIFE</div></section>
+		<section class="intro-band" id="ritual"><p class="eyebrow">The Jespanak approach</p><h2>Less noise. More <em>glow.</em></h2><p>We make the kind of products that earn their place on your shelf: sensorial formulas, purposeful ingredients, and no impossible promises.</p><div class="values"><div><span>01</span><strong>Ingredient-led</strong><small>Only what your skin needs.</small></div><div><span>02</span><strong>Made mindfully</strong><small>Considered from bottle to box.</small></div><div><span>03</span><strong>Always gentle</strong><small>For every version of you.</small></div></div></section>
+		<section class="shop-section" id="shop"><div class="section-heading"><div><p class="eyebrow">The essentials</p><h2>Meet your new <em>ritual.</em></h2></div><div class="filter-tabs" role="group" aria-label="Filter products"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="cleanse">Cleanse</button><button class="filter" data-filter="hydrate">Hydrate</button><button class="filter" data-filter="treat">Treat</button></div></div><div class="product-grid"><article class="product-card" data-category="cleanse"><div class="product-image blush"><span class="product-tag">Bestseller</span><img src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=700&q=85" alt="The Daily Cleanser bottle"></div><div class="product-info"><div><h3>The Daily Cleanser</h3><p>Oat + cloudberry</p></div><span>$28</span></div><button class="add-button" data-product="The Daily Cleanser">Add to bag <span>+</span></button></article><article class="product-card" data-category="hydrate"><div class="product-image butter"><img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=700&q=85" alt="Dew Point moisturizer jar"></div><div class="product-info"><div><h3>Dew Point</h3><p>Peptide + squalane</p></div><span>$34</span></div><button class="add-button" data-product="Dew Point">Add to bag <span>+</span></button></article><article class="product-card" data-category="treat"><div class="product-image lilac"><span class="product-tag limited">Limited</span><img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=700&q=85" alt="Night Shift facial oil bottle"></div><div class="product-info"><div><h3>Night Shift</h3><p>Bakuchiol + rosehip</p></div><span>$42</span></div><button class="add-button" data-product="Night Shift">Add to bag <span>+</span></button></article></div><div class="shop-footer"><p>Small steps, visible difference.</p><a href="#shop">View all products <span>↗</span></a></div></section>
+		<section class="feature" id="journal"><div class="feature-image"><img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1200&q=85" alt="Woman applying skincare to her face"></div><div class="feature-copy"><p class="eyebrow">A little perspective</p><h2>Your routine is a relationship, <em>not a race.</em></h2><p>Good skin is built in the everyday moments: a clean face, a little moisture, five quiet minutes to come back to yourself.</p><a class="text-link" href="#journal">Read the journal <span>↗</span></a></div></section>
+		<section class="newsletter"><div><p class="eyebrow">The good mail</p><h2>Notes for your<br><em>best skin days.</em></h2></div><form class="newsletter-form"><label for="email">Your email address</label><div><input id="email" type="email" placeholder="you@example.com" required><button type="submit" aria-label="Subscribe">↗</button></div><p class="form-message" aria-live="polite"></p></form></section>
+	</main>
+	<footer class="site-footer"><a class="brand" href="#top">jespanak<span>.</span></a><p>Skin, made luminous.</p><div><a href="#shop">Instagram</a><a href="#shop">Contact</a><a href="#shop">Stockists</a></div><small>© 2026 Jespanak Skin</small></footer><div class="toast" role="status" aria-live="polite"></div>
+	<div class="bag-overlay" hidden></div>
+	<aside class="bag-drawer" role="dialog" aria-modal="true" aria-labelledby="bag-title" aria-hidden="true">
+		<div class="bag-header"><div><p class="eyebrow">Your selection</p><h2 id="bag-title">Your bag <span class="drawer-count">(0)</span></h2></div><button class="close-bag" type="button" aria-label="Close shopping bag">×</button></div>
+		<div class="bag-items" aria-live="polite"><p class="empty-bag">Your bag is waiting for something lovely.</p></div>
+		<div class="bag-footer"><div class="bag-total"><span>Subtotal</span><strong>$0</strong></div><p class="shipping-note">Shipping and taxes calculated at checkout.</p><button class="checkout-button" type="button" disabled>Continue to checkout <span>↗</span></button></div>
+	</aside>
+	<div class="account-overlay" hidden></div>
+	<aside class="account-drawer" role="dialog" aria-modal="true" aria-labelledby="account-title" aria-hidden="true">
+		<div class="account-header"><div><p class="eyebrow">Your space</p><h2 id="account-title">Account</h2></div><button class="close-account" type="button" aria-label="Close account">×</button></div>
+		<div class="account-content">
+			<div class="account-guest">
+				<div class="account-tabs" role="tablist" aria-label="Account actions"><button class="account-tab active" type="button" role="tab" aria-selected="true" data-account-view="signup">Sign up</button><button class="account-tab" type="button" role="tab" aria-selected="false" data-account-view="login">Log in</button></div>
+				<form class="account-form" id="signup-form" data-account-panel="signup" novalidate><div class="form-field"><label for="account-name">Name</label><input id="account-name" type="text" autocomplete="name" required></div><div class="form-field"><label for="account-email">Email</label><input id="account-email" type="email" autocomplete="email" required></div><div class="form-field"><label for="account-password">Password</label><input id="account-password" type="password" autocomplete="new-password" minlength="8" required></div><button class="account-submit" type="submit">Create account <span>↗</span></button></form>
+				<form class="account-form" id="login-form" data-account-panel="login" hidden novalidate><div class="form-field"><label for="login-email">Email</label><input id="login-email" type="email" autocomplete="email" required></div><div class="form-field"><label for="login-password">Password</label><input id="login-password" type="password" autocomplete="current-password" required></div><button class="account-submit" type="submit">Log in <span>↗</span></button></form>
+				<p class="account-message" aria-live="polite"></p>
+			</div>
+			<div class="account-member" hidden><div class="member-avatar">JS</div><p class="eyebrow">Signed in as</p><h3 class="member-name"></h3><p class="member-email"></p><button class="account-submit logout-button" type="button">Log out <span>↗</span></button><button class="terminate-button" type="button">Terminate account</button></div>
+		</div>
+	</aside>
+	<div class="scroll-progress" role="progressbar" aria-label="Page scroll progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+		<span>0%</span>
+	</div>
+	<div class="welcome-screen" id="welcome-screen" role="dialog" aria-modal="true" aria-labelledby="welcome-title">
+		<div class="welcome-inner">
+			<p class="welcome-kicker">Welcome to Jespanak</p>
+			<h2 id="welcome-title">A softer way<br>to <em>care.</em></h2>
+			<p class="welcome-copy">Take a breath. Explore a few of the essentials made for your everyday ritual.</p>
+			<div class="welcome-products" aria-label="Featured products">
+				<div class="welcome-product welcome-product-one"><div class="welcome-product-art art-blush"><span>DC</span></div><small>The Daily Cleanser</small></div>
+				<div class="welcome-product welcome-product-two"><div class="welcome-product-art art-butter"><span>DP</span></div><small>Dew Point</small></div>
+				<div class="welcome-product welcome-product-three"><div class="welcome-product-art art-lilac"><span>NS</span></div><small>Night Shift</small></div>
+			</div>
+			<button class="welcome-button" id="welcome-button" type="button">Begin exploring <span>↗</span></button>
+			<div class="welcome-loader" aria-live="polite" aria-label="Loading Jespanak">
+				<span class="loader-orbit"></span>
+				<span class="loader-label">Preparing your ritual</span>
+			</div>
+			<p class="welcome-hint">Your calm corner for considered skincare.</p>
+		</div>
+	</div>
+	<script src="function.js"></script>
+</body>
+</html>
